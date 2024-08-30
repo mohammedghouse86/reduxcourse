@@ -1,0 +1,47 @@
+.btn{
+    background-color: rgb(11, 93, 148);
+    color: rgb(196, 185, 185);
+    padding: 7px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    font-family: 'Times New Roman';
+}
+a{
+  padding: 9px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #1b1d96; /* Background color on hover */
+    color: rgb(255, 255, 255); /* Text color on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 60vw;
+    border-collapse: collapse; /* Ensures borders are shared between cells */
+  }
+  thead, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  td{
+    font-family: 'Times New Roman';
+  }
+  thead {
+    background-color: rgb(11, 93, 148);
+    color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+  }
+input {background-color:black; color:yellowgreen;
+      border-top:0.6px solid antiquewhite;
+      border-bottom:0.6px solid antiquewhite;     
+}
