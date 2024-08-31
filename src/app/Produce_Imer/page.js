@@ -1,8 +1,9 @@
 'use client';
 import React, {useState, useEffect} from 'react';
 import { FaTrash } from 'react-icons/fa';
-import '/app.css';
+import '../app.css';
 import {produce} from 'immer';
+import Link from "next/link";
 const page = () => {
     const [state, setState] = useState({
         todos: [
@@ -50,6 +51,7 @@ const page = () => {
     }
   return (
     <>
+    <button style={{margin:'10px', width:'300px'}} className='btn'><Link href="/">Home</Link></button>
     <form onSubmit={submitForm} style={{display:'flex', flexDirection:'column', width:'50vw', backgroundColor:'black', color:'yellowgreen'}}>
       <label htmlFor="srNo">Sr.No</label>
       <input type="number" name="SrNo" id="srNo" value={arraylength} readOnly/>
